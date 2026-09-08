@@ -1,0 +1,39 @@
+@startuml
+' Votre diagramme de classes. Il est vide : c'est a vous de le remplir.
+' Ce fichier est un livrable. Il doit correspondre au code que vous rendez.
+'
+' Rappel de la syntaxe autorisee (chapitre 3). Decommentez pour vous en
+' inspirer, puis effacez : ce n'est PAS le modele attendu, juste un exemple
+' de notation tire du Donjon.
+'
+' abstract class Item {
+'   #name: string
+'   #weight: float
+'   +{abstract} describe(): string
+' }
+' class Weapon {
+'   -damage: int
+'   +describe(): string
+' }
+' interface Fighter {
+'   +attack(): int
+' }
+' enum Rarity {
+'   Common
+'   Rare
+'   Legendary
+' }
+' class Dice {
+'   -sides: int
+'   +{static} d6(): Dice
+'   +roll(): int
+' }
+' Item <|-- Weapon
+' Fighter <|.. Hero
+' Hero *-- "1" Inventory : inventory
+' Inventory o-- "0..*" Item : items
+' Hero --> "0..1" Weapon : wields
+' Hero ..> Dice : uses
+' note right of Hero : Le joueur.
+
+@enduml
