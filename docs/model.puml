@@ -7,8 +7,8 @@
 ' de notation tire du Donjon.
 '
 ' abstract class Item {
-'   #name: string
-'   #weight: float
+'   +name: string
+'   +weight: float
 '   +{abstract} describe(): string
 ' }
 ' class Weapon {
@@ -24,7 +24,7 @@
 '   Legendary
 ' }
 ' class Dice {
-'   -sides: int
+'   +sides: int
 '   +{static} d6(): Dice
 '   +roll(): int
 ' }
